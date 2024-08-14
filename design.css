@@ -1,0 +1,216 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: raleway;
+    font-weight: 300;
+}
+
+.justify-content{
+    justify-content: space-between;
+}
+
+.align-items{
+    align-items: center;
+}
+
+
+nav ul{
+    margin: auto auto;
+    width: 100%;
+}
+
+ul li{
+list-style: none;
+font-size: 1.3em;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+h2{
+    border: 1px solid palevioletred;
+    background-color: rgba(255, 137, 157, 0.708);
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.wrap{
+    flex-wrap: wrap;
+}
+
+.song-item{
+    border: 1px solid rgb(255, 137, 157);
+    padding: 20px;
+    margin: 5px;
+    width: 47%;
+    height: 70vh;
+}
+
+button{
+padding: 10px;
+margin: 2px;
+border: none;
+background-color: rgb(255, 137, 157);
+color: white;
+}
+
+button:hover{
+background-color: white;
+color: palevioletred;
+border: 1px solid rgb(255, 137, 157);
+}
+
+
+.song-item .imgDiv{
+    margin: 0px;
+    width: 95%;
+    height: 50vh;
+    overflow: hidden;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+.flex{
+    display: flex;
+}
+
+.container{
+    position: fixed;
+    width: 100%;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid palevioletred;
+    margin: 0 10px;
+    background-color:  rgba(255, 137, 157, 0.708) ;
+    color: white;
+}
+
+h1{
+    font-weight: 400;
+    font-size: 2em;
+    animation-name: blink;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: 2;
+   
+    
+}
+
+@keyframes blink {
+    0%{
+        text-shadow: none;
+    }
+    7%{
+        text-shadow: 0px 0px 7px white;
+    }
+    15%{
+        text-shadow: 0px 0px 28px white;
+    }
+    25%{
+       text-shadow: none;
+    }
+    50%{
+       text-shadow: 0px 0px 14px white;
+    }
+    60%{
+        text-shadow: 0px 0px 1px white;
+    }
+    75%{
+        text-shadow: 0px 0px 28px white;
+    }
+    100%{
+        text-shadow: 0px 0px 7px white;
+    }
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.songs{
+    margin-top: 40px;
+    padding: 40px;
+}
+
+.myPlaylist{
+    border: 1px solid rgb(255, 137, 157) ;
+    padding: 20px;
+    margin: 20px;
+    margin-top: 80px;
+    background-color: white;
+}
+
+.logo{
+    width: 25%;
+}
+
+nav{
+    width: 30%;
+}
+
+nav ul li a:hover{
+   text-shadow: 0px 0px 7px white;
+}
+
+.audio{
+    position: fixed;
+    bottom: 10px;
+    text-align: center;
+    left: 35%;
+    width: 40%;
+    padding: 10px;
+    background-color:  rgba(255, 137, 157, 0.708);
+    color: white;
+    border-radius: 28px;
+    box-shadow: 0 0 4px white;
+}
+audio::-webkit-media-controls-panel{
+    background-color: rgb(255, 221, 227);
+}
+
+label{
+    display: block;
+    margin: auto auto;
+    text-align: center;
+    padding: 5px;
+}
+
+.playlist-item-song{
+    margin: 5px;
+    border-bottom: 1px solid palevioletred;
+}
+
+/* search */
+.search{
+    width: 40%;
+    padding: 5px;
+    margin: 2px;
+}
+
+#searchInput{
+    width: 85%;
+    height: 5vh;
+    border: 1px solid palevioletred;
+    padding: 5px;
+    font-size: 1em;
+}
+
+.search button{
+    padding: 4.5px;
+    margin: 0;
+    background-color: white;
+    border: 1px solid palevioletred;
+}
+
+.search button:hover{
+    transform: scale(1.1);
+}

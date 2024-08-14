@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MUSIC</title>
+    <link rel="stylesheet" href="design.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" src="/scripts/utils/firebase-config.js"></script>
+    <script type="module" src="scripts/controller.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="flex">
+        <div class="logo flex justify-content align-items">
+          <h1>MUSIC</h1>
+        </div>
+        <div class="search flex align-items">
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Search Artist Name"
+          />
+          <button class="search-button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#ff899d"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-search"
+            >
+              <circle cx="11" cy="11" r="8" />
+              <path d="m21 21-4.3-4.3" />
+            </svg>
+          </button>
+        </div>
+        <nav class="flex justify-content align-items">
+          <ul class="flex justify-content align-items">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">PLAYLISTS</a></li>
+            <li><a href="#">PROFILE</a></li>
+            <li><a href="#">SETTINGS</a></li>
+          </ul>
+        </nav>
+        <button id="login">LOGIN</button>
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="songs">
+        <div class="title"></div>
+        <div class="song-items flex wrap justify-content align-items">
+          <!-- songs TOP 5 -->
+        </div>
+      </div>
+      <div class="myPlaylist">
+        <h2>My Playlist</h2>
+        <div class="playlist-item">
+          <!-- My Playlist -->
+        </div>
+
+        <div class="audio">
+          <label for="audio"></label>
+          <audio controls>
+            <source src="" />
+          </audio>
+          <!-- audio -->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
