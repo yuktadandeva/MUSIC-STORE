@@ -33,9 +33,23 @@ function displaySongs(){
 
 }
 
-const login = ()=>{
-   const w = signInWithGoogle();
-   console.log(w)
+const login = async ()=>{
+try{
+    const user = await signInWithGoogle();
+    
+  
+        document.querySelector("#login").innerText = "LOGOUT"
+        const userDiv = document.querySelector(".user-info");
+        const p = document.createElement('p');
+        p.innerText = "Hi ," + user.displayName;
+        userDiv.appendChild(p);
+
+   
+}catch{
+    console.log("error")
+}
+   
+
 }
 
 async function getArtistSongs(artist){

@@ -13,6 +13,7 @@ export const signInWithGoogle = ()=>{
         // The signed-in user info.
         const user = result.user;
         console.log("user info is", user);
+        return {displayName, email, photoUrl} = user;
         // IdP data available using getAdditionalUserInfo(result)
         // ...
       }).catch((error) => {
@@ -20,7 +21,7 @@ export const signInWithGoogle = ()=>{
         const errorCode = error.code;
         const errorMessage = error.message;
         // The email of the user's account used.
-        const email = error.customData.email;
+        // const email = error.customData.email;
         // The AuthCredential type that was used.
         const credential = GoogleAuthProvider.credentialFromError(error);
         // ...
