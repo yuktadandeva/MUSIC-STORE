@@ -1,5 +1,6 @@
 import songModel from "../model/song-model.js";
 import { APICLIENT } from "./api-client.js";
+import { addToPlaylist } from "./db/playlist-crud.js";
 
 export const playlistOperations = {
     songs:[],
@@ -22,6 +23,7 @@ export const playlistOperations = {
     addToPlaylist(id){
 
         const songInPlaylist = this.songs.find(song=> song.id == id);
+        addToPlaylist(songInPlaylist);
         this.playlist.push(songInPlaylist);
 
     },

@@ -35,9 +35,8 @@ function displaySongs(){
 
 const login = async ()=>{
 try{
-    const user = await signInWithGoogle();
+    const user = signInWithGoogle();
     
-  
         document.querySelector("#login").innerText = "LOGOUT"
         const userDiv = document.querySelector(".user-info");
         const p = document.createElement('p');

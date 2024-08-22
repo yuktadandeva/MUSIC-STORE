@@ -13,7 +13,7 @@ export const signInWithGoogle = ()=>{
         // The signed-in user info.
         const user = result.user;
         console.log("user info is", user);
-        return {displayName, email, photoUrl} = user;
+        return { displayName, email, photoUrl } = user;
         // IdP data available using getAdditionalUserInfo(result)
         // ...
       }).catch((error) => {
